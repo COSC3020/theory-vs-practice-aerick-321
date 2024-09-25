@@ -2,11 +2,12 @@
 
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
+  
 1- Knowing the best case doesn't help find the average case
 
 2- It can depend on the input/list size, one algorithm may be faster with smaller or already sorted lists that another but as the input grows it could switch
 
-3- Tow athgorithms can have the same asymptotic analysis but the actual running time could be different
+3- Two algorithms can have the same asymptotic analysis but the actual running time could be different
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
