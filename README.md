@@ -14,12 +14,17 @@
   of search in a binary search tree, how long would you guess finding the same
   element in a search tree with 10,000 elements takes? Explain your reasoning.
   
-It should take about 50 seconds because you have the traverse all the elements, O(n), so 10 times the elements would take 10 times as long.
+It should take about 50 seconds because you have the traverse all the elements in the worst case, O(n), so 10 times the elements would take 10 times as long.
 
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
+1- The time could depend on how fast the machine is
+
+2- the tree could be unbalanced
+
+3- there might not be enough memory so there is slower access to the main memory
 
 
 Add your answers to this markdown file.
