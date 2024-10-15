@@ -3,9 +3,9 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
   
-1- Knowing the best case doesn't help find the average case
+1- Knowing the best case doesn't help find the average case, they are not always the same. Average case inputs are often not the ideal inputs you get with the best case. The average case is the practical everyday use and not the perfect ideal input that can be misleading with the fast time.
 
-2- It can depend on the input/list size, one algorithm may be faster with smaller or already sorted lists that another but as the input grows it could switch
+2- It can depend on the input/list size, one algorithm may be faster with smaller list but as the input grows it could switch for example 90000n is slower with a smaller list and n^3 is slower with a larger list
 
 3- Two algorithms can have the same asymptotic analysis but the actual running time could be different
 
@@ -14,13 +14,13 @@
   of search in a binary search tree, how long would you guess finding the same
   element in a search tree with 10,000 elements takes? Explain your reasoning.
   
-It should take about 50 seconds because you have the traverse all the elements in the worst case, O(n), so 10 times the elements would take 10 times as long.
+The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and for log2(10000) = 13.288. 13.288/9.966 = 1.333 growth rate. 1.333 x 5 = 6.665 seconds.
 
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-1- The time could depend on how fast the machine is
+1- The input could be close to the worst case which is O(n) and that can cause a larger time
 
 2- the tree could be unbalanced
 
