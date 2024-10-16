@@ -20,14 +20,14 @@ The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-1- The input could be close to the worst case which is O(n) and almost a list and that can cause a larger time
+1- The input could be close to the worst case which is O(n) and almost a list even thoguh it is technically still the avaerage case and that can cause a longer time
 
-2- 
+2- compiler/architecture (add more later)
 
-3- there might not be enough memory so there is slower access to the main memory
+3- There might not be enough memory so there is slower access to the main memory ( add more detail)
 
 
 Add your answers to this markdown file.
 
 
-Used geeksforgeeks.com to refresh on the time complexity of different operations in Binary search trees. “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
+Used geeksforgeeks.com to refresh on the time complexity of different operations in Binary search trees. The TA helped give me ideas for a thrid reason why the asymptotic complexity suggests a different time. “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
