@@ -22,9 +22,9 @@ The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and
 
 1- The input could be close to the worst case which is O(n) and almost a list even thoguh it is technically still the avaerage case and that can cause a longer time
 
-2- compiler/architecture (add more later)
+2- Different compilers like c++ can cause different optimization in places or not optimize certain loops.
 
-3- There might not be enough memory so there is slower access to the main memory ( add more detail)
+3- The more elements there less that fit in the CPU's cache and that can cause more cache misses and memory swaps so there is slower access to the memory.
 
 
 Add your answers to this markdown file.
