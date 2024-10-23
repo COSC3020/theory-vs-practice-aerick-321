@@ -3,9 +3,12 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
   
-1- Knowing the best case doesn't help find the average case, they are not always the same. Average case inputs are often not the ideal inputs you get with the best case. The average case is the practical everyday use and not the perfect ideal input that can be misleading with the fast time.
+1- Asymptotic analysis normally focuses on the worst-case or even the average-case complexity. In practice, many algorithms perform much better on average than their worst-case complexity suggests. Like with quicksort's best and average case
+is O(nlogn) while the worst case is $O(n^2)$.
 
-2- It can depend on the input/list size, one algorithm may be faster with smaller list but as the input grows it could switch for example 90000n is slower with a smaller list and n^3 is slower with a larger list
+2- Algorithms with higher asymptotic complexity might still perform better due to smaller constant factors or overhead in the algorithm. For example, if we compare two algorithms, one with time complexity 
+𝑂(𝑛) and another with $𝑂(𝑛^3)$, the $𝑂(𝑛^3)$ algorithm might be faster for very small input sizes because its constant factors are smaller. However, as the input size grows, the difference in growth rates becomes bigger. The 
+$𝑂(𝑛^3)$ algorithm will eventually become slower than the 𝑂(𝑛) algorithm because cubic growth outpaces linear growth as the input size increases. Constant factors are ignored once the input is large enough.
 
 3- Two algorithms can have the same asymptotic analysis but the actual running time could be different
 
@@ -20,9 +23,9 @@ The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-1- The input could be close to the worst case which is O(n) and almost a list even though it is technically still the avaerage case and that can cause a longer time
+1- 
 
-2- Different compilers like c++ can cause different optimization in places or not optimize certain loops.
+2- It doesn't take in consideration of the type of element, the elements could have strings which would take longer to process than an integer.
 
 3- The more elements there less that fit in the CPU's cache and that can cause more cache misses and memory swaps so there is slower access to the memory.
 
@@ -30,4 +33,4 @@ The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and
 Add your answers to this markdown file.
 
 
-Used geeksforgeeks.com to refresh on the time complexity of different operations in Binary search trees. The TA helped give me ideas for a thrid reason why the asymptotic complexity suggests a different time. “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
+Used geeksforgeeks.com to refresh on the time complexity of different operations in Binary search trees. The TA helped give me ideas for a thrid reason why the asymptotic complexity suggests a different time. Chat gpt helped me explain some of my answers better. “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
