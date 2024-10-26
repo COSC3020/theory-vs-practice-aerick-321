@@ -23,7 +23,7 @@ The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-1- 
+1- The way nodes are structured in memory, the pointers between nodes, might not be optimized. As the tree grows, inefficiencies in how memory is allocated and how pointers are followed could cause slowdowns. With a 10,000-element tree, ineffective memory layouts might lead to greater traversal times, even though the asymptotic complexity remains O(logn).
 
 2- It doesn't take in consideration of the type of element, the elements could have strings which would take longer to process than an integer.
 
