@@ -10,7 +10,7 @@ is O(nlogn) while the worst case is $O(n^2)$.
 𝑂(𝑛) and another with $𝑂(𝑛^3)$, the $𝑂(𝑛^3)$ algorithm might be faster for very small input sizes because its constant factors are smaller. However, as the input size grows, the difference in growth rates becomes bigger. The 
 $𝑂(𝑛^3)$ algorithm will eventually become slower than the 𝑂(𝑛) algorithm because cubic growth outpaces linear growth as the input size increases. Constant factors are ignored once the input is large enough.
 
-3- Two algorithms can have the same asymptotic analysis but the actual running time could be different
+3- Two algorithms can have the same asymptotic analysis but the actual running time could be different. the complexity is O(nlogn) for both QuickSort and MergeSort and ignores constant factors and lower-order terms. However, these constants can make one algorithm significantly faster than another for the same input size, even if they share the same growth rate. For instance, QuickSort often has a smaller constant factor than MergeSort, making it faster in practice despite both being 𝑂(𝑛log𝑛) on average.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
