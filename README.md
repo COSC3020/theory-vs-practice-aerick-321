@@ -3,7 +3,7 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
   
-1- The hardware and software can affect the performance because some machines may be more efficient with certain programs/algorithms than others.
+1-The hardware and software can affect the performance because some machines may be more efficient with certain programs/algorithms than others. For example with quicksort on a machine with a faster CPU but slower memory, the algorithm may run faster when the list fits in the CPU cache. On another machine with slower disk access and smaller cache, the same quicksort might be slower with a larger list even though it still has the same asymptotic complexity.
 
 2- Algorithms with higher asymptotic complexity might still perform better due to smaller constant factors or overhead in the algorithm. For example, if we compare two algorithms, one with time complexity 
 𝑂(𝑛) and another with $𝑂(𝑛^3)$, the $𝑂(𝑛^3)$ algorithm might be faster for very small input sizes because its constant factors are smaller. However, as the input size grows, the difference in growth rates becomes bigger. The 
