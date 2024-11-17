@@ -3,8 +3,7 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
   
-1- Asymptotic analysis normally focuses on the worst-case or even the average-case complexity. In practice, many algorithms perform much better on average than their worst-case complexity suggests. Like with quicksort's best and average case
-is O(nlogn) while the worst case is $O(n^2)$.
+1- The hardware and software can affect the performance because some machines may be more efficient with certain programs/algorithms than others.
 
 2- Algorithms with higher asymptotic complexity might still perform better due to smaller constant factors or overhead in the algorithm. For example, if we compare two algorithms, one with time complexity 
 𝑂(𝑛) and another with $𝑂(𝑛^3)$, the $𝑂(𝑛^3)$ algorithm might be faster for very small input sizes because its constant factors are smaller. However, as the input size grows, the difference in growth rates becomes bigger. The 
@@ -23,7 +22,7 @@ The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-1- The way nodes are structured in memory, the pointers between nodes, might not be optimized. As the tree grows, inefficiencies in how memory is allocated and how pointers are followed could cause slowdowns. With a 10,000-element tree, ineffective memory layouts might lead to greater traversal times, even though the asymptotic complexity remains O(logn).
+1- While using different compilers and languages can affect smaller inputs they can affect larger inputs even more because it takes longer to proccess to larger lists. If the two tests are run on different machines with one being less powerful it can significantly affect the time with the largers list that may need more memory and power to proccess.
 
 2- It doesn't take in consideration of the type of element, the elements could have strings which would take longer to process than an integer.
 
@@ -33,4 +32,4 @@ The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and
 Add your answers to this markdown file.
 
 
-Used geeksforgeeks.com to refresh on the time complexity of different operations in Binary search trees. The TA helped give me ideas for a thrid reason why the asymptotic complexity suggests a different time. Chat gpt helped me explain some of my answers better. “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
+Used geeksforgeeks.com to refresh on the time complexity of different operations in Binary search trees. The TA helped give me ideas for a thrid reason why the asymptotic complexity suggests a different time. “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
