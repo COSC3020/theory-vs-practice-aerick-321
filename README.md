@@ -9,7 +9,7 @@
 𝑂(𝑛) and another with $𝑂(𝑛^3)$, the $𝑂(𝑛^3)$ algorithm might be faster for very small input sizes because its constant factors are smaller. However, as the input size grows, the difference in growth rates becomes bigger. The 
 $𝑂(𝑛^3)$ algorithm will eventually become slower than the 𝑂(𝑛) algorithm because cubic growth outpaces linear growth as the input size increases. Constant factors are ignored once the input is large enough.
 
-3- Two algorithms can have the same asymptotic analysis but the actual running time could be different. The asymptotic analysis only gives the general bounds so as n approaches infinity the runtimes could vary greatly even though they have the same expression. This is shown in the slides with the graph on slide 37 in sorting where quick sort and merge sort have the same average complexity O(nlogn) but their runtimes are vastly different.
+3- Two algorithms can have the same asymptotic analysis but the actual running time could be different. The asymptotic analysis only gives the general bounds so as n approaches infinity the runtimes could vary greatly even though they have the same expression. This is shown in the slides with the graph on slide 37 in sorting where quick sort and merge sort have the same average complexity O(nlogn) but their runtimes are vastly different. The aysmptotic expression doesn't tell you how the algorithm will actually work.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
