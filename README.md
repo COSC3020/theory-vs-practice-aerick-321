@@ -9,7 +9,7 @@
 𝑂(𝑛) and another with $𝑂(𝑛^3)$, the $𝑂(𝑛^3)$ algorithm might be faster for very small input sizes because its constant factors are smaller. However, as the input size grows, the difference in growth rates becomes bigger. The 
 $𝑂(𝑛^3)$ algorithm will eventually become slower than the 𝑂(𝑛) algorithm because cubic growth outpaces linear growth as the input size increases. Constant factors are ignored once the input is large enough.
 
-3- Two algorithms can have the same asymptotic analysis but the actual running time could be different. The asymptotic analysis only gives the general bounds so as n approaches infinity the runtimes could vary greatly even though they have the same expression. This is shown in the slides with the graph on slide 37 in sorting where quick sort and merge sort have the same average complexity O(nlogn) but their runtimes are vastly different. The aysmptotic expression doesn't tell you how the algorithm will actually work.
+3-Performance can also depend on the compiler or interpreter used for a programming language. For instance, C++ compilers are highly optimized to produce efficient machine code, enabling better utilization of system resources. This makes C++ programs generally faster in execution compared to Python.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
@@ -32,4 +32,4 @@ The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and
 Add your answers to this markdown file.
 
 
-Used geeksforgeeks.com to refresh on the time complexity of different operations in Binary search trees. The TA helped give me ideas for a thrid reason why the asymptotic complexity suggests a different time. “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
+Used geeksforgeeks.com to refresh on the time complexity of different operations in Binary search trees. The TA helped give me ideas for a third reason why the asymptotic complexity suggests a different time and a third reason why asymptotic analysis can be misleading. “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
