@@ -24,7 +24,7 @@ The average case for Binary search tree is O(log(n)). For log2(1000) = 9.966 and
 
 1- While using different compilers and languages can affect smaller inputs they can affect larger inputs even more because it takes longer to proccess to larger lists. If the two tests are run on different machines with one being less powerful it can significantly affect the time with the largers list that may need more memory and power to proccess.
 
-2- It doesn't take in consideration of the type of element, the elements could have strings which would take longer to process than an integer.
+2- When dealing with data types like strings, the impact is even greater because string operations often depend on their length. For a large list of strings, the algorithm not only has to go through more elements, but each string itself might need more time due to its internal complexity. This magnifies the overall processing time as the list size increases
 
 3- The more elements there less that fit in the CPU's cache and that can cause more cache misses and memory swaps so there is slower access to the memory.
 
